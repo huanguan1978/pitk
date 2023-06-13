@@ -90,7 +90,8 @@ class Jmsg {
     */
     
     static function unpack(string $jmsg) {
-        self::$amsg['dat']['_unpack_jmsg'] .= $jmsg;
+        self::$amsg['dat']['_unpack_jmsg'] = isset(self::$amsg['dat']['_unpack_jmsg'])?(self::$amsg['dat']['_unpack_jmsg'].= $jmsg):$jmsg;
+        
         $jdat = json_decode($jmsg, 1);
         if( (JSON_ERROR_NONE === json_last_error())
            && (isset($jdat['ns']) && $jdat['ns'])

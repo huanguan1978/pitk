@@ -1,22 +1,22 @@
-# Pitk ¸öÈËÓÅÑ¡¹¤¾ß¿â
+# Pitk ä¸ªäººä¼˜é€‰å·¥å…·åº“
 Personal Integration Toolkit, Apcu|Memcache Cache, GUMP Validation
 
-## ¼òÊö
-¶ÀÁ¢ÓëPHP¿ª·¢¿ò¼ÜµÄ¸öÈËÓÅÑ¡¹¤¾ß¿â£¬ÒÔ±ã±àĞ´¿ç¿ò¼ÜµÄÍ¨ÓÃÊı¾İ²ã
+## ç®€è¿°
+ç‹¬ç«‹ä¸PHPå¼€å‘æ¡†æ¶çš„ä¸ªäººä¼˜é€‰å·¥å…·åº“ï¼Œä»¥ä¾¿ç¼–å†™è·¨æ¡†æ¶çš„é€šç”¨æ•°æ®å±‚
 
-## ÓÃApcuÀ´»º´æÊı¾İ
+## ç”¨Apcuæ¥ç¼“å­˜æ•°æ®
 
-## ÓÃMemcacheÀ´»º´æÊı¾İ
+## ç”¨Memcacheæ¥ç¼“å­˜æ•°æ®
 
-## Êı¾İĞ£Ñé
+## æ•°æ®æ ¡éªŒ
 
-## ÓÃcomposer°²×°×îĞÂ°æ±¾
+## ç”¨composerå®‰è£…æœ€æ–°ç‰ˆæœ¬
 ``` shell
-$ composer require orz/dbh
+$ composer require orz/pitk
 ```
 
-### ²»ÓÃcomposerÖ±½ÓÏÂÔØ
+### ä¸ç”¨composerç›´æ¥ä¸‹è½½
 [Download ZIP](https://github.com/huanguan1978/pitk/archive/refs/heads/main.zip).
 
-#### ÖÂĞ»
-¸ĞĞ» sabre/cache, wixel/gump, ÕâĞ©ÓÅĞãÀà¿âµÄ×÷Õß£¬ÊÇÄãÃÇÀà¿â·½±ãÁËÈÕ³£±à³Ì¿ª·¢¡£
+#### è‡´è°¢
+æ„Ÿè°¢ sabre/cache, wixel/gump, è¿™äº›ä¼˜ç§€ç±»åº“çš„ä½œè€…ï¼Œæ˜¯ä½ ä»¬ç±»åº“æ–¹ä¾¿äº†æ—¥å¸¸ç¼–ç¨‹å¼€å‘ã€‚

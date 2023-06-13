@@ -12,7 +12,7 @@ class JmsgTest extends TestCase {
     function setUp():void {
         $this->dbm = new Pitk();
      }
-    /*
+
     function testUnpack():void {
         $jarr = ['ns'=>'Pitk\Jmsg', 'method'=>'unpack', 'params'=>['nm'=>'crown', ], ];
         $mesg = json_encode($jarr);
@@ -66,7 +66,7 @@ class JmsgTest extends TestCase {
         $this->assertSame($rdat['mesg'], $amsg['dat']['mesg']);
         $this->assertSame($rdat['data']['result'], $amsg['dat']['data']['result']);                        
     }
-    */
+
     function testMsger():void {
         $jarr = ['ns'=>'Pitk\Jmsg', 'method'=>'redat', 'params'=>['nm'=>'crown', ], ];
         $rdat = ['succ'=>1, 'code'=>200, 'mesg'=>'success', 'data'=>['result'=>'abc',], ];
@@ -80,7 +80,7 @@ class JmsgTest extends TestCase {
         $jarr['params'] = ['dat'=>$rdat,];
         $mesg = json_encode($jarr);        
         $amsg = Jmsg::unpack($mesg)::msger(true,false)::$amsg;
-        var_dump($amsg);exit;        
+        //        var_dump($amsg);exit;        
         
         $this->assertSame($jarr['ns'], $amsg['ns']);
         $this->assertSame($jarr['method'], $amsg['method']);
