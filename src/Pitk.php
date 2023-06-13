@@ -1,7 +1,7 @@
 <?php
 /**
-  Pitk£¬ÈÕ³£¹¤×÷³£ÓÃ¾«Ñ¡¹¤¾ß¿â£¬
-  ·â×°Ò»Ð©¼ò½à¸ßÐ§µÄµÚÈý·½¹¤¾ß¿â
+  Pitkï¼Œæ—¥å¸¸å·¥ä½œå¸¸ç”¨ç²¾é€‰å·¥å…·åº“ï¼Œ
+  å°è£…ä¸€äº›ç®€æ´é«˜æ•ˆçš„ç¬¬ä¸‰æ–¹å·¥å…·åº“
 */
 
 namespace Pitk;
@@ -13,10 +13,10 @@ use Sabre\Cache\Memcached;
 class Pitk {
 
     /**
-      APCU»º´æ
-      @param string $ns »º´æKµÄÇ°×º
-      @param integer $ttl »º´æÊ±¼ä£¬µ¥Î»ÎªÃë£¬Ä¬ÈÏ7200Ãë¼´2Ð¡Ê±£¬0ÃëÔòÎªÓÀ²»¹ýÆÚ
-      @return object ÀàÊµÀý£¬ÊµÏÖPSR16±ê×¼µÄÀàÊµÁÐ£¬¿ÉÓÃPSR16·½·¨µ÷ÓÃ
+      APCUç¼“å­˜
+      @param string $ns ç¼“å­˜Kçš„å‰ç¼€
+      @param integer $ttl ç¼“å­˜æ—¶é—´ï¼Œå•ä½ä¸ºç§’ï¼Œé»˜è®¤7200ç§’å³2å°æ—¶ï¼Œ0ç§’åˆ™ä¸ºæ°¸ä¸è¿‡æœŸ
+      @return object ç±»å®žä¾‹ï¼Œå®žçŽ°PSR16æ ‡å‡†çš„ç±»å®žåˆ—ï¼Œå¯ç”¨PSR16æ–¹æ³•è°ƒç”¨
     */
 
     function apcucache(){
@@ -34,12 +34,12 @@ class Pitk {
     }
 
     /**
-      Êý¾ÝÐ£ÑéÆ÷
-      @param string $data ÒªÐ£ÑéµÄÊý¾Ý
-      @param string $rule Ð£Ñé¹æÔò¼¯
-      @param string $fliter Êý¾Ý¹ýÂË¼¯
-      @param string $emsg ×Ô¶¨Ð£Ñé´íÎóÏÔÊ¾ÐÅÏ¢
-      @return array Ð£Ñé½á¹û,Èç[0, $data, $emsg], Ë÷Òý1Öµ0ÓÐ´í1ÎÞÖµ£¬Ë÷Òý2´¦Àí¹ýµÄÊý¾Ý£¬Ë÷Òý3³ö´íÇåµ¥
+      æ•°æ®æ ¡éªŒå™¨
+      @param string $data è¦æ ¡éªŒçš„æ•°æ®
+      @param string $rule æ ¡éªŒè§„åˆ™é›†
+      @param string $fliter æ•°æ®è¿‡æ»¤é›†
+      @param string $emsg è‡ªå®šæ ¡éªŒé”™è¯¯æ˜¾ç¤ºä¿¡æ¯
+      @return array æ ¡éªŒç»“æžœ,å¦‚[0, $data, $emsg], ç´¢å¼•1å€¼0æœ‰é”™1æ— å€¼ï¼Œç´¢å¼•2å¤„ç†è¿‡çš„æ•°æ®ï¼Œç´¢å¼•3å‡ºé”™æ¸…å•
     */
     function validate(array $data, array $rule, array $fliter=[], array $emsg=[] ):array {
         $gump = new GUMP();

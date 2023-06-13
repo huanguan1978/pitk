@@ -9,10 +9,9 @@
             "email": "crown.hg@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "wixel/gump": "^1.12",
-        "sabre/cache": "dev-master"
+        "sabre/cache": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0"
@@ -28,6 +27,6 @@
         }
     },
     "scripts": {
-	    "test": "vendor/bin/phpunit tests"
+	    "test": "phpunit tests"
     }
 }

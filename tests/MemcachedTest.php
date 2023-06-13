@@ -5,8 +5,9 @@ namespace Pitk\Tests;
 use PHPUnit\Framework\TestCase;
 use Pitk\Pitk;
 
-
-
+/**
+ * @requires extension memcached
+ */
 class MemcachedTest extends TestCase {
     protected $dbm; // Pitk
     protected $cache; // inst

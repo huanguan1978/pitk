@@ -6,6 +6,9 @@ use PHPUnit\Framework\TestCase;
 use Pitk\Pitk;
 
 
+/**
+ * @requires extension apcu
+ */
 
 class ApcucacheTest extends TestCase {
     protected $dbm; // Pitk 实例
